@@ -110,7 +110,7 @@ function configureCard(element) {
       element.appendChild((() => { // description
         const e = document.createElement("p");
         e.classList.add("description");
-        e.innerHTML = data.description;
+        e.innerHTML = data.description; // !! ADD FAILSAFE
         return e;
       })());
 
@@ -166,7 +166,7 @@ function configureCard(element) {
     }
 
     response.json().then(data => {
-      let contributorCount = 0;
+      let contributorCount = 0; // !! ADD FAILSAFE
 
       data.forEach(contributor => {
         contributors.appendChild((() => {
