@@ -5,13 +5,11 @@
   padding: 1rem;
 
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 21rem 7rem;
+  grid-template-rows: 3rem 6rem 3rem;
 
   background-color: #0d1117;
   color: #e6edf3;
-
-  margin: 0 auto;
 }
 
 .github a {
@@ -35,7 +33,6 @@
   grid-row: span 2;
 
   width: 100%;
-  border-radius: 100%;
 
   align-self: center;
   justify-self: center;
@@ -73,7 +70,7 @@
 }
 
 .github .description {
-  margin: 0.2rem;
+  margin: 1rem 0.2rem;
 
   grid-column: span 2;
 
@@ -88,7 +85,7 @@
 }
 
 .github .contributors img {
-  width: 3.2rem;
+  width: 3rem;
   border-radius: 100px;
 
   object-fit: contain;
