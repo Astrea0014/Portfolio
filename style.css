@@ -1,6 +1,10 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -92,21 +96,21 @@ nav a:hover {
 
 #about {
   display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
 
-  width: 80rem;
-
-  margin: 0 auto;
+  width: 100%;
 }
 
 #about h1 {
-  margin-top: 2rem;
-  grid-column: span 2;
+  margin: 2rem auto 0 auto;
 }
 
 #about i {
   display: inline-flex;
+}
+
+.header-large {
+  display: none;
 }
 
 @keyframes bounce {
@@ -128,20 +132,16 @@ nav a:hover {
 }
 
 #about ul {
-  width: auto;
-  height: auto;
-
-  margin: 0;
-  padding: 0;
+  width: 100%;
 
   list-style-type: none;
 }
 
 #about li {
   display: grid;
-  grid-template-columns: 1fr 9fr;
+  grid-template-columns: 1fr 7fr;
 
-  height: 5rem;
+  height: 4rem;
 }
 
 #about li img {
@@ -152,8 +152,9 @@ nav a:hover {
 }
 
 #about li p {
-  font-size: 2rem;
-  margin: 1rem;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  padding-top: 0.25rem;
 }
 
 #about aside {
@@ -164,15 +165,81 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
+@media screen and (min-width: 600px) {
+  #about {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+  
+    width: 70%;
+  
+    margin: 0 auto;
+  }
+
+  #about h1 {
+    grid-column: span 2;
+    margin: 2rem 0 0 0 ;
+  }
+
+  .header-small {
+    display: none;
+  }
+
+  .header-large {
+    display: inline-block;
+  }
+
+  #about ul {
+    margin: 0;
+  }
+
+  #about li {
+    grid-template-columns: 1fr 9fr;
+  
+    height: 5rem;
+  }
+  
+  #about li img {
+    width: 75%;
+  
+    justify-self: center;
+    align-self: center;
+  }
+  
+  #about li p {
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0;
+  }
+}
+
 #projects > h1 {
-  margin: 0 auto;
+  margin: 1rem auto;
   width: fit-content;
 }
 
 .container {
+  width: 90vw;
+  margin: 0 auto;
+
   display: flex;
   flex-wrap: wrap;
   flex-basis: 30%;
 
   column-gap: 1rem;
+  row-gap: 1rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  height: 20vh;
+  margin-top: 2rem;
+
+  background-color: #0d1117;
+}
+
+footer p {
+  color: white;
+  font-size: 3rem;
 }

@@ -1,3 +1,7 @@
+// AUTHORS NOTE:
+// Jag provade en declutteringteknik med lambdafunktioner
+// men det blev kaos, ska skrivas om senare. 
+
 function createSvgWithPath(d) {
   const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   path.setAttribute("d", d);
