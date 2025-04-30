@@ -1,0 +1,21 @@
+@keyframes dot-bounce-animation {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(-0.2rem);
+  }
+}
+
+.dot {
+  display: inline-block;
+  animation: 1s dot-bounce-animation infinite;
+}
+
+.animation-delay-\[0\.2s\] {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-\[0\.4s\] {
+  animation-delay: 0.4s;
+}
