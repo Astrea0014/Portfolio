@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Footer } from "./components/footer/Footer";
 import "./globals.css";
+import "./Variables.css";
 
 export const metadata: Metadata = {
   title: "Douglas Lyman - Portfolio",

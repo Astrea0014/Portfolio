@@ -1,34 +1,34 @@
-import { Header } from "./components/home/header/Header";
-import { MobileNavBox, NavInteractibleParams } from "./components/navigation/Navigation";
+import { Header } from "./components/general/Header";
+import { NavButtonMobile, NavInteractibleParams } from "./components/navigation/NavButtonMobile";
 import "./DotBounceAnimation.css";
 
 export default function Home() {
   const aboutMeParams: NavInteractibleParams = {
-    href: "/",
+    href: "/about",
     label: "About Me",
     icon: "/file.svg",
-    alt: "About Me icon"
+    alt: "A file"
   };
 
   const educationParams: NavInteractibleParams = {
-    href: "/",
+    href: "/education",
     label: "Education",
     icon: "/window.svg",
-    alt: "Education icon"
+    alt: "An application window"
   };
 
   const careerParams: NavInteractibleParams = {
-    href: "/",
+    href: "/career",
     label: "Career",
     icon: "/globe.svg",
-    alt: "Career icon"
+    alt: "A globe"
   };
 
   const projectParams: NavInteractibleParams = {
-    href: "/",
+    href: "/projects",
     label: "Projects",
     icon: "/file.svg",
-    alt: "Projects icon"
+    alt: "A file"
   };
   
   return (
@@ -48,10 +48,10 @@ export default function Home() {
         </p>
 
         <nav className="p-8 flex flex-col justify-center items-center gap-8">
-          <MobileNavBox params={aboutMeParams}/>
-          <MobileNavBox params={educationParams}/>
-          <MobileNavBox params={careerParams}/>
-          <MobileNavBox params={projectParams}/>
+          <NavButtonMobile params={aboutMeParams}/>
+          <NavButtonMobile params={educationParams}/>
+          <NavButtonMobile params={careerParams}/>
+          <NavButtonMobile params={projectParams}/>
         </nav>
       </main>
     </>
