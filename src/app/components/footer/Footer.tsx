@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="w-full h-75 p-8 bg-[#111] text-white text-center">
+    <footer className="mt-auto w-full h-75 p-8 bg-[#111] text-white text-center">
       <h4 className="text-xl font-bold">Copyright &copy; 2025</h4>
       <p className="text-gray-300">Douglas Lyman - All rights reserved</p>
 
