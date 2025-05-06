@@ -17,7 +17,9 @@ export function CrossSubpageNavigatorLink({ name, href, direction }: Readonly<Cr
           "/icons/arrow-back-svgrepo-com.svg"
         )} width={20} height={20} alt={"Navigation arrow"} className="mt-0.5"/>
       <span className="underline">{name}</span>
-      <span className="mt-0.5 text-sm text-gray-600">{direction === "right" ? "Next -" : (direction === "left" ? "- Previous" : "")}</span>
+      {direction !== "home" ?
+      <span className="mt-0.5 text-sm text-gray-600">{direction === "right" ? "Next -" : "- Previous"}</span>
+      : null}
     </a>
   );
 }
